@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/beige.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>CSS shaders</h1>
+					<h3>Presentation for RSSchool</h3>
+					<p>
+						<small>Created by <a href="https://github.com/AlinaSidorova28">Alina Sidorova</a></small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h1>CSS custom filters</h1>
+						<h2>(CSS shaders)</h2>
+						<p class="fragment">Filter Effects 1.0 specification</p>
+					</section>
+					<section>
+						<h2>Built-in CSS filters:</h2>
+						<ul>
+							<li class="fragment">blur</li>
+							<li class="fragment">sepia</li>
+							<li class="fragment">contrast</li>
+							<li class="fragment">grayscale</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>Built-in CSS filters effect</h2>
+					<img src="/src/jupiter-original.jpg" style="margin: 20px 10px;">
+					<img src="/src/jupiter-filter.jpg" style="margin: 20px 10px;">
+				</section>
+
+				<section>
+					<h2>CSS custom filters effect</h2>
+					<img class="fragment fade-out" src="/src/img_filter_custom_source.jpg" style="margin: 20px 10px; position: absolute;">
+					<img src="/src/img_filter_custom_result.jpg" style="margin: 20px 10px;">
+				</section>
+
+				<section>
+					<h1>Shaders</h1>
+					<h3 class="fragment">Small programs which specify custom filter effects</h3>
+				</section>
+
+				<section>
+					<section>
+						<h2>Types of shaders:</h2>
+						<ul>
+							<li class="fragment">vertex shaders</li>
+							<li class="fragment">fragment shaders</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Vertex shaders tell where things are</h3>
+						<img class="fragment" src="/src/sphere.jpg">
+					</section>
+					<section>
+						<h3>Fragment shaders color and texture objects</h3>
+						<img class="fragment" src="/src/points.png" style="position: absolute;">
+						<img class="fragment" src="/src/triangle.png" style="position: absolute;">
+						<img class="fragment" src="/src/pixel_triangle.png" style="position: absolute;">
+						<img class="fragment" src="/src/fragment.png" style="position: absolute;">
+						<img class="fragment" src="/src/colored_triangle.png">
+					</section>
+				</section>
+
+				<section>
+					<h2>Shader variables</h2>
+					<ul>
+						<li class="fragment">Uniforms</li>
+						<li class="fragment">Attributes</li>
+						<li class="fragment">Varyings</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Work of shaders</h2>
+					<img src="/src/css-shader-process.png" height="450px">
+				</section>
+
+				<section>
+					<img src="/src/custom_filter.png" style="height: 600px;">
+				</section>
+
+				<section>
+					<img src="/src/rowscols.png" style="height: 600px;">
+				</section>
+
+				<section>
+					<img src="/src/fragment_shader1.png" style="height: 300px;"><br>
+					<img class="fragment" src="/src/fragment_shader2.png" style="height: 300px;">
+				</section>
+
+				<section>
+					<img src="/src/weird.jpg" style="border: 1px solid #ffffff; height: 600px;"><br>
+				</section>
+
+				<section>
+					<img src="/src/uniform.png" style="height: 600px;">
+				</section>
+
+				<section>
+					<img src="/src/uniform_float.png" style="height: 600px;"><br>
+				</section>
+
+				<section>
+					<h1>Thank you for attention!</h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
